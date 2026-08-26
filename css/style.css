@@ -1384,7 +1384,7 @@ button {
 
     padding: 45px 30px;
 
-    border-right: 1px solid #dfe5e8;
+    border-right: 1px solid #dfe5e8;   
 }
 
 .benefit-item:last-child {
@@ -1406,7 +1406,7 @@ button {
 
     margin-bottom: 28px;
 
-    background: var(--color-white);
+    background: var();
 
     border-radius: 14px;
 
@@ -1698,7 +1698,7 @@ button {
 ========================================================= */
 
 .mission-section {
-    padding: 100px 0;
+    padding: 10px 0;
     background: var(--color-gris-claro-ipl);
 }
 
@@ -2249,7 +2249,7 @@ button {
 ========================================================= */
 
 .contact-section {
-    padding: 110px 0;
+    padding: 50px 0;
 
     background: var(--color-gris-claro-ipl);
 }
@@ -2429,19 +2429,50 @@ button {
 ========================================================= */
 
 .map-heading {
-    margin-top: 70px;
-    margin-bottom: 22px;
+
+    margin-top: 110px;
+
+    margin-bottom: 35px;
+
+    text-align: center;
+
 }
+
 
 .map-heading .section-eyebrow {
-    margin-bottom: 6px;
+
+    display: block;
+
+    margin-bottom: 10px;
+
 }
 
+
+.map-heading h2 {
+
+    margin-bottom: 14px;
+
+    color: var(--color-azul-ipl);
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -0.03em;
+
+}
+
+
 .map-heading p {
+
     margin: 0;
+
     color: var(--color-text-light);
+
     font-size: 15px;
+
     line-height: 1.6;
+
 }
 
 /* =========================================================
@@ -2455,7 +2486,7 @@ button {
 .map-placeholder {
     width: 100%;
 
-    margin-top: 70px;
+    margin-top: 0;
 
     padding: 0;
 
@@ -2475,7 +2506,7 @@ button {
 .contact-map {
     width: 100%;
 
-    margin-top: 0;
+    margin-top: 10px;
 
     overflow: hidden;
 
