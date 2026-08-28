@@ -1404,7 +1404,7 @@ TEXTO DEL HERO
 @media (max-width: 600px) {
 
     .programs-section {
-        padding: 75px 0;
+        padding: 30px 0;
     }
 
     .programs-grid {
@@ -1636,7 +1636,7 @@ TEXTO DEL HERO
 @media (max-width: 600px) {
 
     .benefits-section {
-        padding: 75px 0;
+        padding: 30px 0;
     }
 
     .benefits-grid {
@@ -1893,7 +1893,7 @@ TEXTO DEL HERO
 
 @media (max-width: 600px) {
     .mission-section {
-        padding: 75px 0;
+        padding: 30px 0;
     }
 
     .institution-card {
@@ -2292,7 +2292,7 @@ TEXTO DEL HERO
 @media (max-width: 600px) {
 
     .enrollment-section {
-        padding: 75px 0;
+        padding: 30px 0;
     }
 
     .enrollment-box {
@@ -3288,6 +3288,7 @@ TEXTO DEL HERO
         gap: 24px;
 
         margin-top: 35px;
+       
     }
 
 
