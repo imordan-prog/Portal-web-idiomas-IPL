@@ -1082,7 +1082,7 @@ TEXTO DEL HERO
 
 @media (max-width: 600px) {
     .languages-section {
-        padding: 75px 0;
+        padding: 30px 0;
     }
 
     .section-heading {
@@ -2000,7 +2000,7 @@ TEXTO DEL HERO
     .institution-section,
     .mission-section,
     .values-section {
-        padding: 75px 0;
+        padding: 30px 0;
     }
 
     .institution-history {
@@ -2641,7 +2641,7 @@ TEXTO DEL HERO
 @media (max-width: 600px) {
 
     .contact-section {
-        padding: 75px 0;
+        padding: 30px 0;
     }
 
     .contact-grid {
