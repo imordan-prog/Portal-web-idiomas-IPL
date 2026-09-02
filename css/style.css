@@ -2827,36 +2827,34 @@ TEXTO DEL HERO
         0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-
 /* =========================================================
-   FOOTER
+   FOOTER — ESTILO INSTITUCIONAL IPL
 ========================================================= */
 
 .site-footer {
-    padding: 70px 0 25px;
+    padding: 4rem 0 1.4rem;
+    color: rgba(255, 255, 255, 0.78);
+    background: #00665E;
+}
 
-    background: var(--color-footer);
-
-    color: var(--color-white);
+.site-footer > .container {
+    max-width: 1180px;
 }
 
 
 /* =========================================================
-   GRID PRINCIPAL
+   CONTENIDO PRINCIPAL
 ========================================================= */
 
-.footer-grid {
+.site-footer__main {
     display: grid;
-
     grid-template-columns:
-        1.5fr
-        1fr
-        1fr
-        1fr;
+        minmax(240px, 1.35fr)
+        repeat(3, minmax(140px, 1fr));
 
-    gap: 50px;
+    gap: 2.5rem;
 
-    padding-bottom: 55px;
+    padding: 1rem 0 3.5rem;
 }
 
 
@@ -2864,36 +2862,75 @@ TEXTO DEL HERO
    MARCA
 ========================================================= */
 
-.footer-brand {
-    max-width: 330px;
+.site-footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    max-width: 285px;
 }
 
-.footer-logo {
-    display: inline-flex;
-
-    margin-bottom: 20px;
+.site-footer__logo {
+    display: flex;
+    align-items: center;
 }
 
-.footer-logo .brand-mark {
-    background: var(--color-white);
+.site-footer__logo img {
+    display: block;
 
-    color: var(--color-azul-ipl);
+    width: auto;
+    max-width: 300px;
+    max-height: 175px;
+
+    object-fit: contain;
 }
 
-.footer-logo .brand-text span {
-    color: rgba(255, 255, 255, 0.65);
-}
+.site-footer__brand > p {
+    margin: 0;
 
-.footer-logo .brand-text strong {
-    color: var(--color-white);
-}
-
-.footer-brand > p {
-    color: rgba(255, 255, 255, 0.68);
-
-    font-size: 14px;
-
+    font-size: 1.05rem;
     line-height: 1.7;
+}
+
+
+/* =========================================================
+   REDES SOCIALES
+========================================================= */
+
+.site-footer__social {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.site-footer__social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    color: #FFFFFF;
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 50%;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.site-footer__social a:hover {
+    color: #00665E;
+    background: #FDEE0E;
+
+    transform: translateY(-2px);
 }
 
 
@@ -2901,221 +2938,166 @@ TEXTO DEL HERO
    COLUMNAS
 ========================================================= */
 
-.footer-column {
+.site-footer__column {
     display: flex;
-
     flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 11px;
 }
 
-.footer-column h3 {
-    margin-bottom: 8px;
+.site-footer__label {
+    margin: 0 0 1rem;
 
-    color: var(--color-white);
+    color: #FDEE0E;
 
-    font-size: 15px;
+    font-size: 0.98rem;
+    font-weight: 800;
+    line-height: 1.3;
 }
 
-.footer-column a {
-    color: rgba(255, 255, 255, 0.68);
-
-    font-size: 14px;
-
-    transition: var(--transition);
-}
-
-.footer-column a:hover {
-    color: var(--color-amarillo-ipl);
-
-    transform: translateX(3px);
-}
-
-
-/* =========================================================
-   PARTE INFERIOR
-========================================================= */
-
-.footer-bottom {
+.site-footer__list {
     display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
 
-    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 
-    gap: 20px;
-
-    padding-top: 25px;
-
-    border-top:
-        1px solid rgba(255, 255, 255, 0.14);
+    list-style: none;
 }
 
-.footer-bottom p {
-    color: rgba(255, 255, 255, 0.5);
+.site-footer__list a {
+    color: rgba(255, 255, 255, 0.78);
 
-    font-size: 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.site-footer__list a:hover {
+    color: #FDEE0E;
 }
 
 
 /* =========================================================
-   FOOTER — MÓVIL
+   CONTACTO
 ========================================================= */
 
-@media (max-width: 600px) {
+.site-footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
 
-    /* =====================================================
-       FOOTER
-    ===================================================== */
+.site-footer__contact p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.site-footer__contact a {
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.site-footer__contact a:hover {
+    color: #FDEE0E;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.site-footer__copyright {
+    padding-top: 1.4rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+    text-align: center;
+}
+
+.site-footer__copyright p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1023px) {
+
+    .site-footer__main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 760px) {
 
     .site-footer {
-        padding: 50px 0 25px;
+        padding: 3rem 0 1.2rem;
     }
 
+    .site-footer__main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
 
-    /* =====================================================
-       GRID PRINCIPAL
-    ===================================================== */
-
-    .footer-grid {
-        display: grid;
-
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
-
-        gap: 24px 12px;
-        padding-bottom: 35px;
-
-        justify-items: center;
-
-        text-align: center;
-        
+        padding-bottom: 2.5rem;
     }
 
-
-    /* =====================================================
-       MARCA / LOGO
-    ===================================================== */
-
-    .footer-brand {
-        grid-column: 1 / -1;
-
-        width: 100%;
-
+    .site-footer__brand {
         max-width: 100%;
-
-        text-align: center;
     }
 
-
-    /* Logo y nombre */
-
-    .footer-brand > .brand {
-        display: flex;
-
-        justify-content: center;
-
-        align-items: center;
-
-        width: 100%;
-
-        margin-bottom: 16px;
-
-        text-align: center;
+    .site-footer__logo img {
+        max-width: 260px;
+        max-height: 150px;
     }
 
-
-    /* Imagen del logo */
-
-    .footer-brand > .brand img {
-        display: block;
-
-        flex-shrink: 0;
+    .site-footer__brand > p {
+        font-size: 1rem;
     }
 
+}
 
-    /* Texto del logo */
 
-    .brand-text-footer {
-        text-align: left;
+/* =========================================================
+   MÓVIL PEQUEÑO
+========================================================= */
+
+@media (max-width: 560px) {
+
+    .site-footer__social a {
+        width: 40px;
+        height: 40px;
     }
 
-
-    /* Descripción */
-
-    .footer-brand > p {
-        max-width: 320px;
-
-        margin: 0 auto;
-
-        font-size: 14px;
-
-        line-height: 1.6;
-
-        text-align: center;
+    .site-footer__label {
+        font-size: 0.92rem;
     }
 
-
-    /* =====================================================
-       COLUMNAS
-    ===================================================== */
-
-    
-
-    /* Títulos */
-
-    .footer-column h3 {
-        margin-bottom: 5px;
-
-        font-size: 16px;
-
-        text-align: center;
-    }
-
-
-    /* Enlaces */
-
-    .footer-column a {
-        font-size: 14px;
-
-        text-align: center;
-    }
-
-
-    /* =====================================================
-       SÍGUENOS
-    ===================================================== */
-
-
-    /* =====================================================
-       PARTE INFERIOR
-    ===================================================== */
-
-    .footer-bottom {
-        display: flex;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        justify-content: center;
-
-        gap: 8px;
-
-        padding-top: 18px;
-
-        text-align: center;
-    }
-
-
-    .footer-bottom p {
-        margin: 0;
-
-        font-size: 12px;
-
-        line-height: 1.5;
-
-        text-align: center;
+    .site-footer__list a,
+    .site-footer__contact p {
+        font-size: 0.92rem;
     }
 
 }
@@ -4336,11 +4318,6 @@ TEXTO DEL HERO
         box-shadow 0.25s ease,
         border-color 0.25s ease;
 }
-
-
-/* ---------- BOTÓN PRINCIPAL ---------- */
-
-
 
 /* ---------- BOTÓN SECUNDARIO ---------- */
 
