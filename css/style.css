@@ -13,6 +13,7 @@
     --color-rojo-ipl: #CC3333;
     --color-gris-claro-ipl: #EAF1F8;
     --color-footer: #004C46; 
+    --color-verde-fondo:#EAF5F3;
 
 
     /* =====================================================
@@ -889,15 +890,17 @@ TEXTO DEL HERO
 
     .hero-overlay {
 
-        background:
-            linear-gradient(
-                180deg,
-                rgba(25, 25, 75, 0.35) 0%,
-                rgba(25, 25, 75, 0.78) 50%,
-                rgba(25, 25, 75, 0.95) 100%
-            );
+        
+    background:
+      linear-gradient(
+    90deg,
+    rgba(0, 102, 94, 0.92) 0%,
+    rgba(0, 102, 94, 0.76) 40%,
+    rgba(0, 102, 94, 0.40) 75%,
+    rgba(0, 102, 94, 0.28) 100%
+);
+}
 
-    }
 
 
     .hero-text {
@@ -1311,7 +1314,7 @@ TEXTO DEL HERO
 
     overflow: hidden;
 
-    background: var(--color-azul-oscuro-ipl);
+    background: var(--color-verde-fondo);
 }
 
 
@@ -1345,12 +1348,16 @@ TEXTO DEL HERO
 
     inset: 0;
 
+   
     background:
-        linear-gradient(
-            135deg,
-            rgba(0, 130, 203, 0.62),
-            rgba(17, 101, 162, 0.72)
-        );
+      linear-gradient(
+    90deg,
+    rgba(0, 102, 94, 0.92) 0%,
+    rgba(0, 102, 94, 0.76) 40%,
+    rgba(0, 102, 94, 0.40) 75%,
+    rgba(0, 102, 94, 0.28) 100%
+);
+
 
     pointer-events: none;
 }
@@ -1426,7 +1433,7 @@ TEXTO DEL HERO
 
     padding: 8px 12px;
 
-    background: var(--color-gris-claro-ipl);
+    background: var(--color-verde-fondo);
 
     color: var(--color-azul-ipl);
 
@@ -1473,7 +1480,7 @@ TEXTO DEL HERO
 
     padding: 25px;
 
-    background: var(--color-background);
+    background: var(--color-verde-fondo);
 
     border-radius: var(--radius-md);
 
@@ -1544,7 +1551,7 @@ TEXTO DEL HERO
 .benefits-section {
     padding: 80px 0;
 
-    background: var(--color-background);
+    background: var(--color-verde-fondo);
 }
 
 
@@ -1888,7 +1895,7 @@ TEXTO DEL HERO
 
 .mission-section {
     padding: 10px 0;
-    background: var(--color-gris-claro-ipl);
+    background: var(--color-verde-fondo);
 }
 
 .mission-grid {
@@ -2032,7 +2039,7 @@ TEXTO DEL HERO
 .values-section {
     padding: 60px 0;
 
-    background: var(--color-background);
+    background: var(--color-verde-fondo);
 }
 
 .values-grid {
