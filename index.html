@@ -27,62 +27,193 @@
 <body>
 
     <!-- =========================
-         HEADER
-    ========================== -->
-    <header class="site-header">
+     HEADER
+========================== -->
+<header class="site-header">
 
-        <div class="container header-container">
+    <!-- Barra institucional superior -->
+    <div class="site-header__topbar">
+        <div class="container">
 
-            <!-- Logo / Marca -->
-            <a href="assets\images\Logo-ipl.png" class="brand">
-                <img src="assets\images\Logo-ipl.png" alt="Logo IPL">
+            <nav class="site-header__topbar-nav" aria-label="Accesos institucionales">
 
-               
+                <a href="https://www.ipl.edu.do/" 
+                   class="site-header__topbar-link">
+                    <span>Portal Principal</span>
+                </a>
 
-                <div class="brand-text">
-                    <span>Centro de Idiomas</span>
-                    <strong>Loyola</strong>
+                <span class="site-header__topbar-divider" aria-hidden="true"></span>
+
+                <div class="site-header__topbar-item">
+
+                    <a href="#"
+                       class="site-header__topbar-link"
+                       aria-haspopup="true">
+                        <span>Niveles Académicos</span>
+                        <span class="site-header__topbar-chevron">⌄</span>
+                    </a>
+
+                    <div class="site-header__topbar-dropdown" role="menu">
+                        <a href="#" class="site-header__topbar-dropdown-link">
+                            Nivel Inicial y Primario
+                        </a>
+
+                        <a href="#" class="site-header__topbar-dropdown-link">
+                            Nivel Secundario
+                        </a>
+
+                        <a href="#" class="site-header__topbar-dropdown-link">
+                            Nivel Superior
+                        </a>
+                    </div>
+
                 </div>
-            </a>
+
+            </nav>
+
+        </div>
+    </div>
 
 
-            <!-- Navegación -->
-            <nav class="main-nav" id="mainNav">
+    <!-- Navegación principal -->
+    <div class="site-header__nav">
 
-                <a href="#inicio">Inicio</a>
+        <input
+            type="checkbox"
+            id="menu-movil"
+            class="site-header__menu-checkbox"
+        >
 
-                <a href="#programas">Programas</a>
+        <div class="container">
 
-                <a href="#idiomas">Idiomas</a>
+            <!-- Logo -->
+            <div class="site-header__brand">
 
-                <a href="#nosotros">Nosotros</a>
+                <a href="#inicio"
+                   aria-label="Inicio"
+                   class="site-header__logo-link">
 
-                <a href="#actividades">Actividades</a>
+                    <img
+                        src="assets/images/Logo-ipl.png"
+                        alt="Centro de Idiomas Loyola"
+                        class="site-header__logo-img"
+                    >
 
-                <a href="#contacto">Contacto</a>
+                </a>
 
-                <a href="#inscribete" class="nav-cta">
+            </div>
+
+
+            <!-- Menú principal -->
+            <nav class="site-header__menu" aria-label="Menú principal">
+
+                <a href="#inicio" class="site-header__link">
+                    Inicio
+                </a>
+
+                <a href="#programas" class="site-header__link">
+                    Programas
+                </a>
+
+                <a href="#idiomas" class="site-header__link">
+                    Idiomas
+                </a>
+
+                <a href="#nosotros" class="site-header__link">
+                    Nosotros
+                </a>
+
+                <a href="#actividades" class="site-header__link">
+                    Actividades
+                </a>
+
+                <a href="#contacto" class="site-header__link">
+                    Contacto
+                </a>
+
+                <a href="#inscribete" class="site-header__link site-header__link--cta">
                     Inscríbete
                 </a>
 
             </nav>
 
 
+            <!-- Redes sociales -->
+            <div class="site-header__socials">
+
+                <a href="https://www.facebook.com/politecnicoloyola/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    Facebook
+                </a>
+
+                <a href="https://www.instagram.com/politecnicoloyola/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    Instagram
+                </a>
+
+            </div>
+
+
             <!-- Botón menú móvil -->
-            <button
-                class="menu-toggle"
-                id="menuToggle"
+            <label
+                for="menu-movil"
+                class="site-header__toggle"
                 aria-label="Abrir menú"
-                aria-expanded="false"
             >
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </label>
 
         </div>
 
-    </header>
+
+        <!-- Menú móvil -->
+        <div class="site-header__mobile-menu">
+
+            <nav class="container site-header__mobile-nav"
+                 aria-label="Menú móvil">
+
+                <a href="#inicio" class="site-header__mobile-link">
+                    Inicio
+                </a>
+
+                <a href="#programas" class="site-header__mobile-link">
+                    Programas
+                </a>
+
+                <a href="#idiomas" class="site-header__mobile-link">
+                    Idiomas
+                </a>
+
+                <a href="#nosotros" class="site-header__mobile-link">
+                    Nosotros
+                </a>
+
+                <a href="#actividades" class="site-header__mobile-link">
+                    Actividades
+                </a>
+
+                <a href="#contacto" class="site-header__mobile-link">
+                    Contacto
+                </a>
+
+                <a href="#inscribete"
+                   class="site-header__mobile-link">
+                    Inscríbete
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
 
     <main>
 
