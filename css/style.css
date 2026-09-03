@@ -2779,60 +2779,7 @@ TEXTO DEL HERO
 
 }
 
-/* =========================================================
-   CTA FINAL
-========================================================= */
 
-.final-cta {
-    padding: 95px 0;
-
-    background: var(--color-azul-ipl);
-
-    text-align: center;
-}
-
-.final-cta-content {
-    max-width: 700px;
-
-    margin: 0 auto;
-}
-
-.final-cta .section-eyebrow {
-    color: var(--color-amarillo-ipl);
-}
-
-.final-cta h2 {
-    margin-bottom: 15px;
-
-    color: var(--color-white);
-
-    font-size: clamp(38px, 5vw, 58px);
-
-    line-height: 1.1;
-
-    letter-spacing: -0.03em;
-}
-
-.final-cta p {
-    margin-bottom: 30px;
-
-    color: rgba(255, 255, 255, 0.82);
-
-    font-size: 17px;
-}
-
-.final-cta-button {
-    background: var(--color-white);
-
-    color: var(--color-azul-ipl);
-}
-
-.final-cta-button:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 15px 30px rgba(0, 0, 0, 0.15);
-}
 
 /* =========================================================
    FOOTER — ESTILO INSTITUCIONAL IPL
